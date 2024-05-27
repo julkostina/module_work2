@@ -1,0 +1,31 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <servlet>
+        <servlet-name>ListArticlesServlet</servlet-name>
+        <servlet-class>org.example.ListArticlesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListArticlesServlet</servlet-name>
+        <url-pattern>/listArticles</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewArticleServlet</servlet-name>
+        <servlet-class>ViewArticleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewArticleServlet</servlet-name>
+        <url-pattern>/viewArticle</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddArticleServlet</servlet-name>
+        <servlet-class>addArticleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddArticleServlet</servlet-name>
+        <url-pattern>/addArticle</url-pattern>
+    </servlet-mapping>
+</web-app>
